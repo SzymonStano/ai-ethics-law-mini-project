@@ -1,0 +1,105 @@
+Academic AI Ethics License v1.0
+================================
+
+Copyright (c) 2025-2026 Lukasz Augustyniak, Politechnika Wroclawska
+
+Niniejsza licencja reguluje korzystanie z szablonu repozytorium mini-projektu
+z kursu "Aspekty prawne, spoleczne i etyczne w sztucznej inteligencji".
+
+Sama ta licencja jest materialem dydaktycznym --- przeczytaj ja uwaznie,
+bo dotyczy Ciebie jako studenta i przyszlego inzyniera AI.
+
+
+1. DOZWOLONE UZYCIE
+--------------------
+
+Szablon jest udostepniony WYLACZNIE do celow akademickich:
+
+  a) Realizacja mini-projektu w ramach kursu na Politechnice Wroclawskiej.
+  b) Nauka i eksperymentowanie z narzediami AI w kontekscie edukacyjnym.
+  c) Prezentacja wlasnych wynikow w portfolio studenckim (po zakonczeniu kursu).
+
+
+2. TWOJA PRACA JEST TWOJA
+--------------------------
+
+Kod, analizy, wnioski i artefakty, ktore stworzysz w swoim repozytorium,
+naleza do Ciebie. Ten szablon nie przenosi na prowadzacego ani uczelnie
+zadnych praw do Twojej pracy intelektualnej.
+
+Pamietaj jednak: jesli uzywasz API (OpenAI, Anthropic, Google), zapoznaj sie
+z ich regulaminami --- to temat 9 z menu mini-projektow i nie jest trywialny.
+Kto jest wlascicielem outputu wygenerowanego przez model? Odpowiedz zalezy
+od dostawcy.
+
+
+3. KOD WYGENEROWANY PRZEZ AI
+------------------------------
+
+Jesli czesc Twojego kodu zostala wygenerowana przez narzedzia AI
+(Claude, GPT, Copilot itp.), to:
+
+  a) MUSISZ to udokumentowac w PROCESS.md --- to wymog kursu, ale tez
+     dobra praktyka zgodna z wytycznymi ACM, IEEE i wielu konferencji
+     naukowych, ktore od 2024 wymagaja ujawniania uzycia AI.
+  b) Wygenerowany kod NIE jest automatycznie objety prawem autorskim
+     w wielu jurysdykcjach. US Copyright Office orzekl w 2023, ze dziela
+     w calosci wygenerowane przez AI nie podlegaja ochronie prawnoautorskiej.
+     W UE kwestia pozostaje otwarta, ale trend jest podobny.
+  c) Nie zwalnia Cie to z odpowiedzialnosci za bledy w tym kodzie.
+     AI Act (art. 28b) podkresla, ze czlowiek pozostaje odpowiedzialny
+     za decyzje podejmowane z uzyciem systemow AI.
+
+
+4. ZAKAZ WYKORZYSTANIA DO TRENINGU AI
+---------------------------------------
+
+Niniejszy szablon oraz prace studentow utworzone na jego podstawie
+NIE MOGA byc wykorzystywane jako dane treningowe dla modeli AI
+bez wyraznej, pisemnej zgody autora pracy.
+
+Dlaczego to wazne? Bo to dokladnie ten sam problem, o ktory toczy sie
+spor w sprawach NYT vs. OpenAI, Getty Images vs. Stability AI
+i wielu innych. Jako student kursu o etyce AI, powinienes rozumiec
+obie strony tego sporu --- i swiadomie decydowac, co robisz ze swoimi danymi.
+
+
+5. BRAK GWARANCJI
+-------------------
+
+Szablon jest udostepniany "AS IS", bez jakiejkolwiek gwarancji.
+Prowadzacy nie ponosi odpowiedzialnosci za:
+
+  - Koszty API poniesione podczas realizacji projektu.
+  - Utrate danych w repozytorium.
+  - Konsekwencje uzycia wynikow analizy w celach innych niz edukacyjne.
+
+Brzmi znajomo? Taka klauzula jest w niemal kazdej licencji open-source
+(MIT, Apache, BSD) i w kazdym regulaminie API. Warto wiedziec, ze
+"AS IS" ma realne konsekwencje prawne.
+
+
+6. MODYFIKACJE SZABLONU
+-------------------------
+
+Mozesz dowolnie modyfikowac strukture szablonu (dodawac pliki, katalogi,
+zmieniac README), pod warunkiem zachowania:
+
+  - Pliku AGENTS.md (instrukcje dla agentow AI)
+  - Pliku PROCESS.md (dokumentacja procesu)
+  - Informacji o autorze szablonu (niniejsza licencja)
+
+
+7. NOTA EDUKACYJNA
+--------------------
+
+Ta licencja celowo laczy elementy roznych tradycji prawnych:
+
+  - Licencje open-source (MIT/Apache): klauzule 5-6
+  - AI Act: klauzula 3c
+  - Prawo autorskie / IP: klauzule 2-3
+  - Ochrona danych treningowych: klauzula 4
+
+W prawdziwym projekcie nie mieszalbyś tych elementow w jednym dokumencie.
+Ale w kursie o aspektach prawnych AI --- jest to celowe, zebys zobaczyl,
+ile roznych regulacji moze dotyczyc jednego repozytorium z kodem.

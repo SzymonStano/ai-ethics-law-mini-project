@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+
+# Środowisko
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Duże pliki (>10 MB nie wrzucaj na GitHub)
+*.zip
+*.tar.gz
+*.h5
+*.pkl
+*.pt
+*.bin
+*.onnx
+
+# uv
+.python-version
+uv.lock
+
+# Dane wrażliwe
+*.csv
+!wyniki/*.csv
