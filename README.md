@@ -1,4 +1,4 @@
-# [Tytuł mini-projektu]
+# Wyjaśnialność Grafowych Sieci Neuronowych w zadaniu detekcji napadów padaczkowych za pomocą sygnału EEG i ręcznie tworzonych cech.
 
 **Autor:** Szymon Stano, nr indeksu: 268776
 
@@ -103,10 +103,8 @@ Powyższa analiza wskazuje na to, że wyjaśnialność modeli uczenia głębokie
 
 ## Źródła
 
-- [Nazwa źródła](URL) — krótki opis
-
--chb mit
--cheb conv
--gnn explainer
--eeg gnn survey
--xai gnn
+- [CHB-MIT Scalp EEG Database](https://physionet.org/content/chbmit/1.0.0/) — zbiór danych
+- [Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering](https://doi.org/10.48550/arXiv.1606.09375) — użyty model GNN (ChebConv)
+- [GNNExplainer: Generating Explanations for Graph Neural Networks](https://doi.org/10.48550/arXiv.1903.03894) — użyta metoda wyjaśnialności
+- [Graph Neural Network-based EEG Classification: A Survey](https://doi.org/10.48550/arXiv.2310.02152) - przegląd podejść w dziedzinie GNN i EEG
+- [Explainable Graph Neural Networks for EEG Classification and Seizure Detection in Epileptic Patients](https://ieeexplore.ieee.org/document/10635821) - publikacja o podobnej tematyce
