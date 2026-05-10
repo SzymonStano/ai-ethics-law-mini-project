@@ -60,6 +60,15 @@ def run_training():
         for g2 in test_data:
             g2.x = (g2.x - median) / iqr
 
+    # Tworzenie obiektu do zapisu
+    scaler_params = {
+        'median': median,
+        'iqr': iqr
+    }
+
+    # Zapis do pliku
+    torch.save(scaler_params, 'wyniki/robust_scaler_params.pt')
+    print("Parametry skalowania zostały zapisane.")
 
     train_loader = get_weighted_loader(train_data, BATCH_SIZE)
     val_loader = DataLoader(val_data, batch_size=BATCH_SIZE, shuffle=False)

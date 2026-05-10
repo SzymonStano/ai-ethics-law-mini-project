@@ -6,18 +6,25 @@ from collections import Counter
 from src.config import PROCESSED_DIR
 from torch_geometric.utils import add_self_loops
 
+from pathlib import Path
+PROCESSED_DIR = Path("/home/szymonst/Sztuczna_Inteligencja/Sem-2/eeg/gnn-eeg/data/preprocessed")
 LABEL_ICTAL = 1
 
 
 def load_data_for_subjects(subject_list, remap_to_binary=True, add_self_loops_flag=False, scaling=False):
     combined_data = []
+    # NOTE: DO USUNIĘCIA!!!!
+    cnt = 0
     if add_self_loops_flag:
         print("Ładowanie danych z dodanymi pętlami własnymi!")
     if scaling:
         print("Ładowanie danych z normalizacją cech per pacjent!")
     for subj in subject_list:
-        file_path = PROCESSED_DIR / f"patient_{subj}.pt"
-
+        # file_path = PROCESSED_DIR / f"patient_{subj}.pt"
+        file_path = PROCESSED_DIR / f"patient_{subj}_no_mad_smoothing_low_freq_0.5_overlap_new_features_downsampling_no_scaling.pt"
+        # if cnt == 0:
+            # print(file_path)
+        # cnt += 1
         if file_path.exists():
             data = torch.load(file_path, weights_only=False)
             for d in data:
@@ -31,17 +38,17 @@ def load_data_for_subjects(subject_list, remap_to_binary=True, add_self_loops_fl
                     d.edge_index, d.edge_attr = add_self_loops(
                         d.edge_index,
                         edge_attr=d.edge_attr,
-                    fill_value=1.0 
+                    fill_value=1.0  # 👈 ważne!
                     )
 
             if scaling:
                 interictal_feats = torch.cat([g.x for g in data if g.y != 1], dim=0)
                 if interictal_feats.shape[0] > 0:
-                    median = torch.median(interictal_feats, dim=0).values
-                    iqr = torch.quantile(interictal_feats, 0.75, dim=0) - torch.quantile(interictal_feats, 0.25, dim=0) + 1e-6
+                    mean = torch.median(interictal_feats, dim=0).values
+                    std = torch.quantile(interictal_feats, 0.75, dim=0) - torch.quantile(interictal_feats, 0.25, dim=0) + 1e-6
                     
                     for g in data:
-                        g.x = (g.x - median) / iqr
+                        g.x = (g.x - mean) / std
                             
             combined_data.extend(data)
         else:

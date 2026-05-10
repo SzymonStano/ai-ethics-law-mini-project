@@ -2,7 +2,8 @@ from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
-RAW_DIR = PROJECT_ROOT / "data" / "chb-mit"
+# RAW_DIR = PROJECT_ROOT / "data" / "chb-mit"
+RAW_DIR = Path("/home/szymonst/Sztuczna_Inteligencja/Sem-2/GNN/data/chb-mit")
 PROCESSED_DIR = PROJECT_ROOT / "data" / "preprocessed"
 
 
