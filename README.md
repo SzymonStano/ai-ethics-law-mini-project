@@ -154,6 +154,13 @@ Several directions could improve the analysis:
 4. [Graph Neural Network-based EEG Classification: A Survey](https://doi.org/10.48550/arXiv.2310.02152) — Overview of graph neural networks for EEG classification.
 5. [Explainable Graph Neural Networks for EEG Classification and Seizure Detection in Epileptic Patients](https://ieeexplore.ieee.org/document/10635821) — Related work on explainable graph neural networks for EEG analysis.
 
----
+## Academic Context and AI-Assisted Development
 
+This project was developed as part of the *Legal, Social, and Ethical Aspects of Artificial Intelligence* course at Wrocław University of Science and Technology (PWr) during the 2025/2026 academic year.
+
+The project explored the application of domain knowledge to explainable AI, with an emphasis on critically evaluating model explanations and documenting the use of large language models (LLMs) throughout development.
+
+As part of the coursework, the development process, AI-assisted decisions, selected prompts, and limitations of the approaches explored were documented in [`DEVELOPMENT_PROCESS.md`](DEVELOPMENT_PROCESS.md).
+
+---
 *This project was developed for academic purposes and is intended for research and educational use. The results should not be interpreted as clinical validation of an epileptic seizure detection system.*
